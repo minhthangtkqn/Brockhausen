@@ -1,0 +1,1398 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+/*START SETUP GENERAL ELEMENT*/
+@font-face {
+    font-family: AvenirLTStd-Black;
+    src: url(AvenirLTStd-Black.otf);
+}
+
+* {
+    font-family: AvenirLTStd-Black, Tahoma, Verdana, helvetica;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+hr {
+    margin: 0 30%;
+}
+
+/*START SETUP DESKTOP*/
+@media screen and (min-width: 426px) {
+    #layout {
+        max-width: 1340px;
+        height: auto;
+        margin: 0 auto;
+        background-color: #f9f9f9;
+    }
+
+    /*START SETUP GENERAL ELEMENT*/
+    /*START SETUP CLASSES */
+    .smallTitle {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .bigTitle {
+        font-size: 5vw;
+        font-weight: bolder;
+    }
+
+    .Para {
+        font-size: 1.5vw;
+    }
+
+    .gachNgangMauXanh {
+        height: 200px;
+        background-color: #dceaf5;
+    }
+
+    .abc {
+        height: 100px;
+    }
+
+    .gachNgangMauTrang {
+        height: 200px;
+    }
+
+    /*END SETUP CLASSES*/
+    /*START SETUP HEADER*/
+    #header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-left: 5%;
+        z-index: 10;
+    }
+
+    #header #image {
+        width: 40%;
+    }
+
+    #header #image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #header #nav {
+        position: absolute;
+        width: 2%;
+        height: auto;
+        top: 20px;
+        right: 5%;
+    }
+
+    #header #nav img {
+        width: 100%;
+        height: auto;
+    }
+
+    #header #anchorLinks {
+        position: absolute;
+        top: 70px;
+        right: 5%;
+    }
+
+    #header #anchorLinks li {
+        text-align: right;
+        font-size: 17px;
+    }
+
+    /*END SETUP HEADER*/
+    /*START SETUP HOME*/
+    #home * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #home {
+        width: 100%;
+        margin: 0;
+        padding: 300px 0 0 0;
+    }
+
+    #home #above {
+        width: 100%;
+        position: relative;
+    }
+
+    #home #above #homeTitle {
+        position: absolute;
+        top: 70px;
+        width: 40%;
+        z-index: 1;
+    }
+
+    #home #above #homeTitle p.smallTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #home #above #homeTitle p.bigTitle {
+        margin: 0 0 0 10%;
+    }
+
+    #home #above #image {
+        position: relative;
+        width: 65%;
+        margin-left: 18%;
+    }
+
+    #home #above #image .homePicLarge {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+
+        box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+        0 0 7px 7px rgba(0, 0, 0, 0.25),
+        inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+        background: url(images\Header\homePic.png) no-repeat;
+
+        display: none;
+    }
+
+    #home #above #image .homePic {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #home #above #image .itemHome {
+        position: absolute;
+        height: auto;
+    }
+
+    #home #above #image #item1 {
+        width: 27%;
+        /*height: auto;*/
+        top: 13%;
+        right: 17%;
+    }
+
+    #home #above #image #item2 {
+        width: 28.5%;
+        /*height: auto;*/
+        top: 40%;
+        left: -10%;
+    }
+
+    #home #above #image #item3 {
+        width: 26%;
+        /*height: auto;*/
+        top: 65%;
+        left: -15%;
+    }
+
+    #home #above #image #item4 {
+        width: 22%;
+        /*height: auto;*/
+        top: 80%;
+        left: 3%;
+    }
+
+    #home #above #image #item5 {
+        width: 27.5%;
+        /*height: auto;*/
+        top: 23%;
+        right: 10%;
+    }
+
+    #home #above #image #item6 {
+        width: 27%;
+        /*height: auto;*/
+        top: 57%;
+        right: -4%;
+    }
+
+    #home #above #image #item7 {
+        width: 25%;
+        /*height: auto;*/
+        top: 71.5%;
+        right: -4%;
+    }
+
+    #home #above #image #item8 {
+        width: 28.5%;
+        /*height: auto;*/
+        top: 85%;
+        right: 5%;
+    }
+
+    #home #above #image .lineHome {
+        position: absolute;
+        border: 1px solid black;
+        width: 12%;
+        height: auto;
+    }
+
+    #home #above #image #linePowder {
+        top: 16%;
+        right: 44%;
+    }
+
+    #home #above #image #lineLining {
+        top: 75%;
+        right: 21%;
+    }
+
+    #home #above #image #linePre {
+        top: 70%;
+        left: 11%;
+    }
+
+    #homePara {
+        margin: -500px 0 0 0;
+        padding-top: 550px;
+        width: 100%;
+        overflow: auto;
+        background-color: #f69679;
+    }
+
+    #homePara ul li {
+        display: inline;
+    }
+
+    #leftPara {
+        float: left;
+        width: 35%;
+        margin: 0 0 50px 100px;
+    }
+
+    #rightPara {
+        float: right;
+        width: 45%;
+        height: auto;
+        margin: 0 50px 0 0;
+    }
+
+    /*END SETUP HOME*/
+    /*START SETUP BALL MILL INTERNALS*/
+    #ballMillInternals * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div#ballMillInternals {
+        width: 100%;
+        background-color: #dceaf5;
+    }
+
+    div#ballMillSmallTitle ul {
+        overflow: auto;
+    }
+
+    div#ballMillSmallTitle ul li {
+        display: inline;
+    }
+
+    div#ballMillSmallTitle #leftTitle {
+        float: left;
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    div#ballMillSmallTitle #rightHome {
+        float: right;
+        text-align: right;
+        margin: 0 100px 0 0;
+    }
+
+    div#ballMillSmallTitle .bigTitle {
+        margin: 0 0 0 5%;
+    }
+
+    div#ballMillContent {
+        width: 100%;
+        position: relative;
+        margin-top: -100px;
+    }
+
+    div#picAbove {
+        width: 75%;
+        margin: 0 0 0 7%;
+        top: 0;
+    }
+
+    div#picAbove img {
+        width: 100%;
+        height: auto;
+    }
+
+    #under {
+        width: 100%;
+        overflow: auto;
+        position: relative;
+    }
+
+    #under div {
+        display: inline;
+    }
+
+    #under #paraAbove {
+        float: left;
+        width: 40%;
+        margin: 0 0 0 5%;
+    }
+
+    #under #picUnder {
+        float: right;
+        width: 65%;
+        height: auto;
+        margin-right: 15%;
+    }
+
+    #under #picUnder img {
+        width: 100%;
+        height: auto;
+    }
+
+    #under #paraUnder {
+        position: absolute;
+        left: 5%;
+        top: 150px;
+        width: 40%;
+    }
+
+    /*END SETUP BALL MILL INTERNALS*/
+    /*START SETUP MACHINE & EQUIPMENT*/
+    #machineEquipment * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #machineEquipment {
+        width: 100%;
+    }
+
+    div#machineEquipmentTitle {
+        width: 100%;
+    }
+
+    div#machineEquipmentTitle ul {
+        overflow: auto;
+    }
+
+    div#machineEquipmentTitle ul li {
+        display: inline;
+    }
+
+    div#machineEquipmentTitle #leftTitle {
+        float: left;
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    div#machineEquipmentTitle #rightHome {
+        float: right;
+        text-align: right;
+        margin: 0 100px 0 0;
+    }
+
+    div#machineEquipmentTitle .bigTitle {
+        margin: 0 0 0 100px;
+    }
+
+    div#machineEquipmentContent {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    #machineEquipmentContent #meImage {
+        width: 100%;
+        height: 60vw;
+        position: relative;
+    }
+
+    #machineEquipmentContent #meImage .itemME {
+        position: absolute;
+        height: auto;
+    }
+
+    #meImage #item1 {
+        width: 16%;
+        top: 0;
+        left: 35%;
+    }
+
+    #meImage #item2 {
+        width: 16%;
+        top: 28%;
+        left: 22%;
+    }
+
+    #meImage #item3 {
+        width: 15%;
+        top: 60%;
+        left: 35%;
+    }
+
+    #meImage #item4 {
+        width: 12%;
+        top: 60%;
+        left: 55%;
+    }
+
+    #meImage #item5 {
+        width: 12%;
+        top: 26%;
+        left: 70%;
+    }
+
+    #meImage #item6 {
+        width: 15%;
+        top: 0;
+        left: 55%;
+    }
+
+    #meImage #item7 {
+        width: 13%;
+        top: 33%;
+        left: 46%;
+    }
+
+    #meImage #noteMeImg {
+        position: absolute;
+        width: 12%;
+        height: auto;
+        bottom: 3%;
+        left: 5%;
+    }
+
+    #machineEquipmentPara {
+        margin-left: 15%;
+        width: 35%;
+    }
+
+    #machineEquipmentPara p#last {
+        margin-top: 30px;
+    }
+
+    /*END SETUP MACHINE & EQUIPMENT*/
+    /*START SETUP ENGINEERING SERVICES*/
+    #engineeringService {
+        width: 100%;
+        background-color: #f69679;
+    }
+
+    #engineeringService * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Title*/
+    #engineeringServiceTitle {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    #engineeringServiceTitle ul {
+        overflow: auto;
+    }
+
+    #engineeringServiceTitle ul li {
+        display: inline;
+    }
+
+    #engineeringServiceTitle #leftTitle {
+        float: left;
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    #engineeringServiceTitle #rightHome {
+        float: right;
+        text-align: right;
+        margin: 0 100px 0 0;
+    }
+
+    #engineeringServiceTitle p.bigTitle {
+        margin: 0 0 0 100px;
+    }
+
+    /*Content*/
+    #engineeringServicesContent {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    #engineeringServicesContent div.rows {
+        width: 100%;
+        margin-bottom: 50px;
+        overflow: auto;
+    }
+
+    #engineeringServicesContent #firstRow {
+        position: relative;
+    }
+
+    #engineeringServicesContent #firstRow div {
+        display: inline;
+    }
+
+    #engineeringServicesContent #firstRow #pic1 {
+        float: left;
+        width: 50%;
+        height: auto;
+        margin-left: 10%;
+    }
+
+    #engineeringServicesContent #firstRow #pic1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #firstRow #pic2 {
+        float: right;
+        width: 30%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+    }
+
+    #engineeringServicesContent #firstRow #pic2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #secondRow {
+        overflow: auto;
+        padding: 0 5vw 0 10%;
+        border: 1px solid black;
+    }
+
+    #engineeringServicesContent #secondRow div {
+        display: inline-block;
+    }
+
+    #engineeringServicesContent #secondRow #secondRowPara {
+        float: left;
+        width: 40%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #secondRow #secondRowImg {
+        float: right;
+        width: 50%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #secondRow img {
+        width: 100%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #thirdRow img {
+        width: 85%;
+        height: auto;
+        margin: 0 0 50px 10%;
+    }
+
+    /*END SETUP ENGINEERING SERVICES*/
+    #gachNgangEsE {
+        margin-top: 100px;
+    }
+
+    /*START SETUP ENERGY*/
+    #energy {
+        width: 100%;
+        background-color: #dceaf5;
+    }
+
+    #energy * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #energyTitle {
+        width: 100%;
+    }
+
+    #energyTitle ul {
+        overflow: auto;
+    }
+
+    #energyTitle ul li {
+        display: inline;
+    }
+
+    #energyTitle #leftTitle {
+        float: left;
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    #energyTitle #rightHome {
+        float: right;
+        text-align: right;
+        margin: 0 100px 0 0;
+    }
+
+    #energyTitle .bigTitle {
+        margin: 0 0 0 10%;
+        font-size: 8vw;
+    }
+
+    #energyContent {
+        width: 100%;
+        margin: 100px 0 0 0;
+    }
+
+    #energyContent {
+        overflow: auto;
+        width: 100%;
+    }
+
+    #energyContent #leftContent {
+        float: left;
+        width: 40%;
+        height: auto;
+        margin: 0 0 0 10%;
+    }
+
+    #energyContent #rightContent img {
+        float: right;
+        width: 35%;
+        height: auto;
+        margin: 0 5% 0 0;
+    }
+
+    /*END SETUP ENERGY*/
+    /*START SETUP CONSULTING*/
+    #consulting {
+        position: relative;
+        width: 100%;
+        background-color: #dceaf5;
+    }
+
+    #consulting * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #consultingContent {
+        width: 100%;
+        margin: 0 0 50px 0;
+    }
+
+    #consultingTitle ul {
+        overflow: auto;
+    }
+
+    #consultingTitle ul li {
+        display: inline;
+    }
+
+    #consultingTitle #leftHome {
+        float: left;
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    #consultingTitle #rightTitle {
+        float: right;
+        text-align: right;
+        margin: 0 100px 0 0;
+    }
+
+    #consultingTitle p.bigTitle {
+        text-align: right;
+        margin: 0 100px 0 0;
+        font-size: 7vw;
+    }
+
+    #consultingContent {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    #consultingContent ul {
+        position: relative;
+    }
+
+    #consultingContent #leftContent {
+        width: 50%;
+        height: auto;
+        margin-left: 5%;
+    }
+
+    #consultingContent #leftContent img {
+        width: 100%;
+        height: auto;
+    }
+
+    #consultingContent #rightContent {
+        width: 30%;
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+    }
+
+    /*END SETUP CONSULTING*/
+    /*START SETUP CONTACT*/
+    #contact {
+        width: 100%;
+    }
+
+    #contact * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #contactSmallTitle {
+        width: 100%;
+    }
+
+    #contactSmallTitle ul {
+        overflow: auto;
+        width: 100%;
+    }
+
+    #contactSmallTitle ul li {
+        display: inline;
+    }
+
+    #contactSmallTitle #leftTitle {
+        float: left;
+        text-align: left;
+        margin: 0 0 0 50px;
+    }
+
+    #contactSmallTitle #rightHome {
+        float: right;
+        text-align: right;
+        margin: 0 100px 0 0;
+    }
+
+    #contactBigTitle p {
+        font-size: 50px;
+        margin: 50px 100px 100px 100px;
+    }
+
+    #contact {
+        margin: 50px 0 0 0;
+    }
+
+    /*END SETUP CONTACT*/
+    /*START SETUP IMPRINT & DISCLAIMER*/
+    #imprintAndDisclaimer {
+        width: 100%;
+        margin-top: 300px;
+    }
+
+    #imprintTitle .smallTitle {
+        margin: 0 100px 0 0;
+        text-align: right;
+    }
+
+    #imprintContent {
+        margin: 20px 5% 300px 40%;
+    }
+
+    #imprintContent p {
+        margin-top: 50px;
+    }
+
+    /*END SETUP IMPRINT & DISCLAIMER*/
+}
+
+/*END SETUP DESKTOP*/
+
+/*START SETUP MOBILE*/
+@media screen and (max-width: 425px) {
+    * {
+        font-family: AvenirLTStd-Black, Tahoma, Verdana, helvetica;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        font-size: 4.5vw;
+    }
+
+    #layout {
+        width: 100vw;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .smallTitle {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+
+    .bigTitle {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+
+    .Para {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+
+    .gachNgangMauXanh {
+        height: 60px;
+        background-color: #dceaf5;
+    }
+
+    .abc {
+        height: 30px;
+    }
+
+    .gachNgangMauTrang {
+        height: 60px;
+    }
+
+    /*START HEADER*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #header #image {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        left: 7%;
+    }
+
+    #header #image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #header #nav {
+        position: absolute;
+        width: 5%;
+        height: auto;
+        top: 20px;
+        right: 5%;
+    }
+
+    #header #nav img {
+        width: 100%;
+        height: auto;
+    }
+
+    #header #anchorLinks {
+        position: absolute;
+        top: 50px;
+        right: 5%;
+    }
+
+    #header #anchorLinks li {
+        text-align: right;
+    }
+
+    /*END HEADER*/
+    /*START SETUP HOME*/
+    #home * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #home {
+        width: 100%;
+        padding: 280px 0 0 0;
+    }
+
+    #home #above {
+        width: 100%;
+    }
+
+    #home #above #image {
+        width: 100%;
+        margin: 10px 0 0 0;
+        background-color: #f69679;
+    }
+
+    #home #above #image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #home #above #homeTitle p.smallTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #home #above #homeTitle p.bigTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #home #above #image .itemHome {
+        position: static;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        width: 60%;
+        height: auto;
+    }
+
+    #home #above #image #item1 {
+        margin-top: -30px;
+    }
+
+    #home #above #image .lineHome {
+        display: none;
+    }
+
+    #homePara {
+        margin: 0;
+        width: 100%;
+        background-color: #f69679;
+    }
+
+    #homePara ul li {
+        padding: 0 5% 20px 5%;
+    }
+
+    /*END SETUP HOME*/
+    /*START SETUP BALL MILL INTERNALS*/
+    #ballMillInternals * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #ballMillInternals {
+        width: 100%;
+    }
+
+    #ballMillSmallTitle #leftTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #ballMillSmallTitle #rightHome {
+        display: none;
+    }
+
+    #ballMillSmallTitle .bigTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #ballMillContent {
+        width: 100%;
+        background-color: #dceaf5;
+    }
+
+    #picAbove {
+        width: 90%;
+        height: auto;
+        margin: 0 0 0 5%;
+    }
+
+    #picAbove img {
+        width: 100%;
+        height: auto;
+    }
+
+    #under {
+        width: 100%;
+        height: auto;
+    }
+
+    #under #paraAbove {
+        width: 100%;
+        padding: 10px 5% 0 5%;
+    }
+
+    #picUnder {
+        width: 100%
+        height: auto;
+        padding-left: 10%;
+    }
+
+    #picUnder img {
+        width: 90%;
+        height: auto;
+    }
+
+    #paraUnder {
+        width: 100%;
+        height: auto;
+        padding: 0 5% 10px;
+    }
+
+    /*END SETUP BALL MILL INTERNALS*/
+    /*START SETUP MACHINE & EQUIPMENT*/
+    #machineEquipment * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #machineEquipment {
+        width: 100%;
+    }
+
+    #machineEquipmentTitle {
+        width: 100%;
+        height: auto;
+    }
+
+    #machineEquipmentTitle #leftTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #machineEquipmentTitle #rightHome {
+        display: none;
+    }
+
+    #machineEquipmentTitle .bigTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #machineEquipmentContent {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+
+    #machineEquipmentContent #meImage {
+        width: 100%;
+        height: 100vw;
+        position: relative;
+        margin-bottom: 30%;
+    }
+
+    #machineEquipmentContent #meImage .itemME {
+        position: absolute;
+        width: 20%;
+        height: auto;
+    }
+
+    #meImage #item1 {
+        top: 0;
+        left: 20%;
+    }
+
+    #meImage #item2 {
+        top: 28%;
+        left: 10%;
+    }
+
+    #meImage #item3 {
+        top: 58%;
+        left: 20%;
+    }
+
+    #meImage #item4 {
+        top: 56%;
+        left: 50%;
+    }
+
+    #meImage #item5 {
+        top: 26%;
+        left: 68%;
+    }
+
+    #meImage #item6 {
+        top: 0;
+        left: 50%;
+    }
+
+    #meImage #item7 {
+        top: 30%;
+        left: 38%;
+    }
+
+    #meImage #noteMeImg {
+        position: absolute;
+        width: 25%;
+        height: auto;
+        top: 103%;
+        left: 10%;
+    }
+
+    div#machineEquipmentPara {
+        width: 100%;
+        padding: 10px 5%;
+    }
+
+    div#machineEquipmentPara p#last {
+        margin-top: 20px;
+    }
+
+    /*END SETUP MACHINE & EQUIPMENT*/
+    /*START SETUP ENGINEERING SERVICES*/
+    #engineeringService * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #engineeringService {
+        width: 100%;
+        background-color: #f69679;
+        padding-top: 30px;
+    }
+
+    #engineeringServiceTitle {
+        width: 100%;
+    }
+
+    #engineeringServiceTitle #leftTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #engineeringServiceTitle #rightHome {
+        display: none;
+    }
+
+    #engineeringServiceTitle p.bigTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #engineeringServicesContent {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #engineeringServicesContent .rows {
+        width: 100%;
+    }
+
+    #engineeringServicesContent div div {
+        margin-bottom: 30px;
+        margin-left: 5%;
+    }
+
+    #engineeringServicesContent #firstRow #pic1 {
+        width: 90%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #firstRow #pic1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #firstRow #pic2 {
+        width: 90%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #firstRow #pic2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #secondRow {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    #engineeringServicesContent #secondRow p {
+        width: 90%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #secondRow img {
+        width: 100%;
+        height: auto;
+    }
+
+    #engineeringServicesContent #thirdRow {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        padding-bottom: 20px;
+    }
+
+    #engineeringServicesContent #thirdRow img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*END SETUP ENGINEERING SERVICES*/
+    /*START SETUP ENERGY*/
+    #energy {
+        width: 100%;
+        background-color: #dceaf5;
+    }
+
+    #energy * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #energyTitle {
+        width: 100%;
+    }
+
+    #energyTitle #leftTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #energyTitle #rightHome {
+        display: none;
+    }
+
+    #energyTitle .bigTitle {
+        margin: 0 0 0 5%;
+    }
+
+    #energyContent {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+
+    #energyContent {
+        width: 100%;
+    }
+
+    #energyContent #leftContent {
+        width: 90%;
+        height: auto;
+        margin: 0 0 0 5%;
+    }
+
+    #energyContent #rightContent {
+        width: 90%;
+        height: auto;
+        margin: 20px 0 0 5%;
+    }
+
+    #energyContent #rightContent img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*END SETUP ENERGY*/
+    /*START SETUP CONSULTING*/
+    #consulting {
+        width: 100%;
+        background-color: #dceaf5;
+    }
+
+    #consulting * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #consultingContent {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    #consultingTitle #leftHome {
+        display: none;
+    }
+
+    #consultingTitle #rightTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #consultingTitle p.bigTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #consultingContent #leftContent {
+        width: 90%;
+        height: auto;
+        margin: 0 0 0 5%;
+    }
+
+    #consultingContent #leftContent img {
+        width: 100%;
+        height: auto;
+    }
+
+    #consultingContent #rightContent {
+        padding: 20px 5% 20px 5%;
+    }
+
+    /*END SETUP CONSULTING*/
+    /*START SETUP CONTACT*/
+    #contact {
+        width: 100%;
+    }
+
+    #contact * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #contactSmallTitle {
+        width: 100%;
+    }
+
+    #contactSmallTitle #leftTitle {
+        text-align: left;
+        margin: 0 0 0 5%;
+    }
+
+    #contactSmallTitle #rightHome {
+        display: none;
+    }
+
+    #contactBigTitle {
+        padding: 20px 5% 0 5%;
+    }
+
+    #contactBigTitle p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /*END SETUP CONTACT*/
+    /*START SETUP IMPRINT & DISCLAIMER*/
+    #imprintAndDisclaimer {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    #imprintTitle .smallTitle {
+        margin: 0 5% 30px 5%;
+        text-align: left;
+    }
+
+    #imprintContent {
+        padding: 0 5% 0 5%;
+    }
+
+    #imprintContent p {
+        font-size: 18px;
+    }
+
+    /*END SETUP IMPRINT & DISCLAIMER*/
+}
+
+/*END SETUP MOBILE*/

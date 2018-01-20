@@ -1,0 +1,602 @@
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: black;
+}
+
+
+@font-face {
+	font-family: AvenirLTStd-Black;
+	src: url(AvenirLTStd-Black.otf);
+}
+
+
+/*START SETUP GENERAL ELEMENT*/
+*{
+	font-family: AvenirLTStd-Black, Tahoma, Verdana, helvetica;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	/*border: 1px solid black;*/
+	margin: 0;
+	padding 0;
+}
+
+
+
+#layout {
+	width: 1340px;
+	margin: 0 auto;
+	/*border: 1px solid black;*/
+	background-color: #f9f9f9;
+}
+
+img {
+	border: none;
+	vertical-align: top;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+hr {													 
+	margin: 0 30%;
+}
+
+/*START SETUP GENERAL ELEMENT*/
+
+
+
+
+/*START SETUP CLASSES */
+.smallTitle {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+
+.bigTitle {
+	font-size: 65px;
+	font-weight: bolder;
+}
+
+.Para {
+	font-size: 20px;
+}
+
+.gachNgangMauXanh{
+	height: 200px;
+	background-color: #dceaf5;
+}
+
+div.abc{
+	height: 100px;
+}
+
+.gachNgangMauTrang{
+	height: 200px;
+}
+
+/*END SETUP CLASSES*/
+
+
+
+/*START SETUP HEADER*/
+
+#header{
+	width: 1340px;
+	margin: 0 auto;
+	position: fixed;	
+	z-index: 1;
+}
+
+#header #image{
+	position: absolute;
+	left: 150px;
+}
+
+#header #nav{
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+
+#header #anchorLinks{
+	position: absolute;
+	top: 70px;
+	right: 50px;
+}
+
+#header #anchorLinks li{
+	text-align: right;
+}
+
+/*END SETUP HEADER*/
+
+
+
+/*START SETUP HOME*/
+#home *{ margin: 0; 	padding: 0; }
+#home{
+	width: 100%;
+	margin: 0;
+	padding: 300px 0 0 0;
+}
+
+#home #image {
+	position: relative;
+	overflow: auto;
+}
+
+#home #image img {
+	float: right;
+	width: 75%;
+	height: auto;
+	margin: 0 100px 0 0;
+}
+
+#home #image #homeTitle{
+	position: absolute;
+	top: 50px;
+	width: 40%;
+}
+
+#home div#image #homeTitle p.smallTitle {
+	margin: 0 0 0 50px;
+
+}
+
+#home div#image #homeTitle p.bigTitle {
+	margin: 0 0 0 100px;
+}
+
+
+
+#homePara{	
+	margin: -500px 0 0 0;	
+	padding-top: 550px;
+	width: 100%;
+	overflow: auto;
+	background-color: #f69679; 
+}
+
+#homePara ul li {	display: inline;}
+
+#leftPara{
+	float: left;
+	width: 35%;
+	margin: 0 0 50px 100px;	
+}
+
+#rightPara{
+	float: right;
+	width: 45%;
+	height: auto;
+	margin: 0 50px 0 0;
+}
+/*END SETUP HOME*/
+
+
+
+/*START SETUP BALL MILL INTERNALS*/
+
+#ballMillInternals *{
+	margin: 0;
+	padding: 0;
+}
+
+div#ballMillInternals{
+	width: 100%;
+	background-color: #dceaf5;
+}
+
+div#ballMillSmallTitle ul{
+	overflow: auto;
+}
+
+div#ballMillSmallTitle ul li{	
+	display: inline;	
+}
+
+div#ballMillSmallTitle #leftTitle{
+	float: left;
+	text-align: left;
+	margin: 0 0 0 50px;
+}
+
+div#ballMillSmallTitle #rightHome{
+	float: right;
+	text-align: right;
+	margin: 0 100px 0 0;
+}
+
+div#ballMillContent{
+	width: 100%;
+}
+
+div#picAbove {
+	width: 100%;
+	position: relative;
+}
+
+div#picAbove img {
+	width: 85%;
+	height: auto;
+	margin: 0 0 0 50px;
+}
+
+div#picAbove p.bigTitle {
+	position: absolute;
+	left: 50px;
+	top: 0;
+}
+
+
+div#picUnder {
+	position: relative;
+	overflow: auto;
+}
+
+div#picUnder img{
+	width: 80%;
+	height: auto;
+	margin: 50px 50px 0 0;
+	float: right;
+}
+
+
+div#ballMillPara {
+	position: absolute;
+	left: 100px;
+	top: 0;
+	width: 35%;
+}
+
+div#ballMillPara p{
+	margin-top: 40px; 
+}
+
+div#ballMillPara p#first{
+	margin: 0;
+}
+/*END SETUP BALL MILL INTERNALS*/
+
+
+
+/*START SETUP MACHINE & EQUIPMENT*/
+
+#machineEquipment *{
+	margin: 0;		padding: 0;
+}
+
+#machineEquipment{
+	width: 100%;
+}
+div#machineEquipmentTitle{	width: 100%;	}
+div#machineEquipmentTitle ul{ overflow: auto; }
+div#machineEquipmentTitle ul li{	display: inline;	}
+
+div#machineEquipmentTitle #leftTitle{
+	float: left;
+	text-align: left;
+	margin: 0 0 0 50px;
+}
+
+div#machineEquipmentTitle #rightHome{
+	float: right;
+	text-align: right;
+	margin: 0 100px 0 0;
+}
+
+div#machineEquipmentTitle .bigTitle{
+	margin: 0 0 0 100px;
+}
+
+div#machineEquipmentContent{
+	width: 100%;
+	margin: 100px 0 0 0;
+}
+
+#machineEquipmentContent img{
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+}
+
+div#machineEquipmentPara {
+	margin-left: 200px;
+	width: 35%;
+}
+
+div#machineEquipmentPara p#last{
+	margin-top: 30px; 
+}
+/*END SETUP MACHINE & EQUIPMENT*/
+
+
+
+/*START SETUP ENGINEERING SERVICES*/
+
+#engineeringService{
+	width: 100%;
+	background-color: #f69679;
+}
+
+#engineeringService *{	
+	margin: 0; padding: 0;
+}
+
+/*Title*/
+#engineeringServiceTitle{	padding-top: 50px;	width: 100%;	}
+
+#engineeringServiceTitle ul{ overflow: auto; }
+
+#engineeringServiceTitle ul li{	display: inline;	}
+
+#engineeringServiceTitle #leftTitle{
+	float: left;
+	text-align: left;
+	margin: 0 0 0 50px;
+}
+
+#engineeringServiceTitle #rightHome{
+	float: right;
+	text-align: right;
+	margin: 0 100px 0 0;
+}
+
+#engineeringServiceTitle p.bigTitle{
+	margin: 0 0 0 100px;
+}
+
+
+/*Content*/
+#engineeringServicesContent {
+	width: 100%;
+	margin: 50px 0 0 0;
+}
+
+#engineeringServicesContent .rows{
+	width: 100%;
+	margin-top: 50px;
+}
+
+#engineeringServicesContent #firstRow {
+	overflow: auto;
+	position: relative;
+}
+
+#engineeringServicesContent #firstRow div{	display: inline;	}
+
+#engineeringServicesContent #firstRow #pic1{
+	float: left;	
+	width: 50%; 
+	height: auto;
+	margin-left: 10%;
+}
+#engineeringServicesContent #firstRow #pic1 img{
+	width: 100%;
+	height: auto;
+}
+#engineeringServicesContent #firstRow #pic2 {	
+	float: right;
+	width: 30%;
+	height: auto;
+
+	position: absolute;
+	bottom: 0;
+	right: 5%;
+}
+
+#engineeringServicesContent #firstRow #pic2 img{
+	width: 100%;
+	height: auto;
+}
+
+
+#engineeringServicesContent #secondRow p{
+	margin: 0 0 0 10%;
+	float: left;
+	width: 40%;
+	height: auto;
+}
+
+#engineeringServicesContent #secondRow img{
+	margin-right: 5%;
+	width: 40%;
+	float: right;
+	height: auto;
+}
+
+#engineeringServicesContent #thirdRow img{
+	width: 85%;
+	height: auto;
+	margin: 50px 0 50px 10%;
+}
+/*END SETUP ENGINEERING SERVICES*/
+
+#gachNgangEsE{
+	margin-top: 100px;
+}
+
+/*START SETUP ENERGY*/
+
+#energy{
+	width: 100%;
+	background-color: #dceaf5;
+}
+
+#energy *{
+	margin: 0;		padding: 0;
+}
+
+#energyTitle{	width: 100%;	}
+#energyTitle ul{ overflow: auto; }
+#energyTitle ul li{	display: inline;	}
+
+#energyTitle #leftTitle{
+	float: left;
+	text-align: left;
+	margin: 0 0 0 50px;
+}
+
+#energyTitle #rightHome{
+	float: right;
+	text-align: right;
+	margin: 0 100px 0 0;
+}
+
+#energyTitle .bigTitle{
+	margin: 0 0 0 10%;
+	font-size: 100px;
+}
+
+#energyContent {
+	width: 100%;
+	margin: 100px 0 0 0;
+}
+
+#energyContent {		overflow: auto;		width: 100%;	}
+
+#energyContent #leftContent{
+	float: left;
+	width: 40%;
+	height: auto;
+	margin: 0 0 0 10%;
+}
+
+#energyContent #rightContent img{
+	float: right;
+	width: 35%;
+	height: auto;
+	margin: 0 5% 0 0;
+}
+/*END SETUP ENERGY*/
+
+
+
+
+
+/*START SETUP CONSULTING*/
+#consulting{
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	background-color: #dceaf5;
+}
+
+#consulting *{
+	margin: 0;		padding: 0;
+}
+
+#consultingContent{
+	width: 100%;
+	margin: -100px 0 100px 0;
+}
+
+#consultingTitle ul{ overflow: auto; }
+#consultingTitle ul li{	display: inline;	}
+
+#consultingTitle #leftHome{
+	float: left;
+	text-align: left;
+	margin: 0 0 0 50px;
+}
+#consultingTitle #rightTitle{
+	float: right;
+	text-align: right;
+	margin: 0 100px 0 0;
+}
+
+#consultingTitle p.bigTitle{
+	text-align: right;
+	margin: 0 100px 0 0;
+	font-size: 100px;
+}
+
+#consultingContent ul{	overflow: auto;	}
+#consultingContent ul li{	display: inline;	}
+
+#consultingContent ul li#leftContent img{
+	width: 60%;
+	height: auto;
+	float: left;
+	margin: 0 0 0 5%;
+}
+#consultingContent ul li#rightContent {
+	position: absolute;
+	right: 5%;
+	bottom: 100px;
+	width: 27%;
+}
+/*END SETUP CONSULTING*/
+
+
+
+/*START SETUP CONTACT*/
+#contact { width: 100%; }
+
+#contact *{
+	margin: 0;		padding: 0;
+}
+
+#contactSmallTitle	{	width: 100%;	}
+#contactSmallTitle ul{ overflow: auto;	width: 100%; }
+#contactSmallTitle ul li{	display: inline;	}
+
+#contactSmallTitle #leftTitle{
+	float: left;
+	text-align: left;
+	margin: 0 0 0 50px;
+}
+#contactSmallTitle #rightHome{
+	float: right;
+	text-align: right;
+	margin: 0 100px 0 0;
+}
+
+#contactBigTitle{
+	/*margin: 50px 100px 0 200px;*/
+}
+
+#contactBigTitle p{
+	font-size: 50px;
+	margin: 50px 100px 100px 100px;
+}
+
+#contact{
+	margin: 50px 0 0 0 ;
+}
+/*END SETUP CONTACT*/
+
+
+
+/*START SETUP IMPRINT & DISCLAIMER*/
+#imprintAndDisclaimer{
+	width: 100%;
+	margin-top: 300px;
+}
+
+#imprintTitle .smallTitle{
+	margin: 0 100px 0 0;
+	text-align: right;
+}
+
+#imprintContent {
+	margin: 20px 100px 300px 40%;
+}
+
+#imprintContent p{
+	margin-top: 50px;
+}
+
+/*END SETUP IMPRINT & DISCLAIMER*/
